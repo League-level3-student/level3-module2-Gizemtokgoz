@@ -24,7 +24,7 @@ public class Algorithms {
     	return false;
     }
     
-    /* public static String isSquare(int num1, int num2) {
+    public static String isSquare(int num1, int num2) {
     	int newnum = num1*num2;
     	return null;
        
@@ -34,7 +34,7 @@ public class Algorithms {
     	int newnum = num1*num2;
     	return null;
        
-    } */
+    }
     
      
     public static int findBrokenEgg(List<String> eggs) {
@@ -59,9 +59,7 @@ public class Algorithms {
 	
 	public static int findTallest(List<Double> peeps) {
 		for (int i = 0; i < peeps.size(); i++) {
-			if (i) {
-				
-			}
+			
 		}
 		
 		return 0;

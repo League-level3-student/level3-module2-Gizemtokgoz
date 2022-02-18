@@ -11,32 +11,30 @@ import java.util.List;
 public class _02_JavaClassSearchSort {
     
     public static int[] arraySort(int[] arr) {
-    	for (int i = 0; i < arr.length; i++) {
-			Arrays.sort(arr);
-		}	
-    	return null;
+		Arrays.sort(arr);
+    	return arr;
     }
     
     public static List<Double> listSort(List<Double> list){
-        for (int i = 0; i < list.size(); i++) {
-			Collections.sort(list);
-		}
-        return null;
+		Collections.sort(list);
+        return list;
     }
 
     public static Boolean arraySearch(char[] arr, char key) {
-    	for (int i = 0; i < arr.length; i++) {
-			Arrays.sort(arr);
-			int arrSearch = Arrays.binarySearch(arr, key);
-		}    	
-        return null;
+		Arrays.sort(arr);
+		boolean arrSearch = false;
+		if (Arrays.binarySearch(arr, key) >= 0) {
+			return true;
+		} 
+        return false;
     }
     
-    public static Boolean listSearch(List<Character> list, Character key) {
-    	for (int i = 0; i < list.size(); i++) {
-			Collections.sort(list);
-			int liSearch = Collections.binarySearch(list, key);
+	public static Boolean listSearch(List<Character> list, Character key) {
+		Collections.sort(list);
+		boolean listSearch = false;
+		if (Collections.binarySearch(list, key) >= 0) {
+			return true;
 		}
-        return null;
-    }
+		return false;
+	}
 }
